@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Dec  8 10:25:27 2017
+# Process ID: 4188
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1480 C:\Users\Aklas\Desktop\microSense_topLevel\microSense\microSense.xpr
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/vivado.log
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/vga'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'microSense_top_level.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+microSense_top_level_vga_module_0_0
+
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 901.270 ; gain = 178.453
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding cell -- xilinx.com:user:vga_module:1.0 - vga_module_0
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:user:top_level_SAR:1.0 - top_level_SAR_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <microSense_top_level> from BD file <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 952.695 ; gain = 51.426
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:vga_module:1.0 [get_ips  microSense_top_level_vga_module_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd'
+INFO: [IP_Flow 19-3422] Upgraded microSense_top_level_vga_module_0_0 (vga_module_v1_0 1.0) from revision 2 to revision 3
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd> 
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ui/bd_3c498be5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips microSense_top_level_vga_module_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd> 
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/sim/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_module_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_level_SAR_0 .
+Exporting to file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level.hwh
+Generated Block Design Tcl file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level_bd.tcl
+Generated Hardware Definition File C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.359 ; gain = 67.066
+catch { config_ip_cache -export [get_ips -all microSense_top_level_vga_module_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+launch_runs -jobs 8 microSense_top_level_vga_module_0_0_synth_1
+[Fri Dec  8 10:26:29 2017] Launched microSense_top_level_vga_module_0_0_synth_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_vga_module_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -directory C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files -ipstatic_source_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/modelsim} {questa=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/questa} {riviera=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/riviera} {activehdl=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design -force
+save_bd_design
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd> 
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ui/bd_3c498be5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'microSense_top_level.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/sim/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_module_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_level_SAR_0 .
+Exporting to file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level.hwh
+Generated Block Design Tcl file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level_bd.tcl
+Generated Hardware Definition File C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.hwdef
+CRITICAL WARNING: [filemgmt 20-730] Could not find a top module in the fileset sources_1.
+Resolution: With the gui up, review the source files in the Sources window. Use Add Sources to add any needed sources. If the files are disabled, enable them. You can also select the file and choose Set Used In from the pop-up menu. Review if they are being used at the proper points of the flow.
+ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).
+make_wrapper -files [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -top
+add_files -norecurse C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Dec  8 10:29:13 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/runme.log
+[Fri Dec  8 10:29:13 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/runme.log
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:12:17
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739922A
+set_property PROGRAM.FILE {C:\Users\Aklas\Desktop\microSense_topLevel\sar\sar.runs\impl_1\top_level_SAR.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/impl_1/top_level_SAR.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+save_bd_design
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ui/bd_3c498be5.ui> 
+file mkdir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk
+file copy -force C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/microSense_top_level_wrapper.sysdef C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk -hwspec C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk -hwspec C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183739922A
+current_project microSense
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+current_project sar
+ipx::open_ipxact_file {C:\Users\Aklas\Desktop\microSense_topLevel\sar\sar.srcs\sources_1\new\component.xml}
+WARNING: [IP_Flow 19-4308] Project file 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/constrs_1/new/constraint.xdc' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new'
+ERROR: [Common 17-190] Invalid Tcl eval of 'current_project microSense' during processing of event '278'.
+ERROR: [Common 17-39] 'update_ip_catalog' failed due to earlier errors.
+current_project microSense
+close_project
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new'
+close_project
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/vga'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'microSense_top_level.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+microSense_top_level_top_level_SAR_0_0
+
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1787.324 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:user:top_level_SAR:1.0 - top_level_SAR_0
+Adding cell -- xilinx.com:user:vga_module:1.0 - vga_module_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <microSense_top_level> from BD file <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1787.324 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:top_level_SAR:1.0 [get_ips  microSense_top_level_top_level_SAR_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd'
+INFO: [IP_Flow 19-3422] Upgraded microSense_top_level_top_level_SAR_0_0 (top_level_SAR_v1_0 1.0) from revision 3 to revision 5
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd> 
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ui/bd_3c498be5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips microSense_top_level_top_level_SAR_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+Wrote  : <C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd> 
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/sim/microSense_top_level.vhd
+VHDL Output written to : C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_module_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_level_SAR_0 .
+Exporting to file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level.hwh
+Generated Block Design Tcl file C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hw_handoff/microSense_top_level_bd.tcl
+Generated Hardware Definition File C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1787.324 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all microSense_top_level_top_level_SAR_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+launch_runs -jobs 8 microSense_top_level_top_level_SAR_0_0_synth_1
+[Fri Dec  8 12:31:18 2017] Launched microSense_top_level_top_level_SAR_0_0_synth_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_top_level_SAR_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -directory C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files -ipstatic_source_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/modelsim} {questa=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/questa} {riviera=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/riviera} {activehdl=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Dec  8 12:32:12 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/runme.log
+[Fri Dec  8 12:32:12 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/runme.log
+file copy -force C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/microSense_top_level_wrapper.sysdef C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 12:47:27 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Dec  8 10:20:43 2017
+# Process ID: 868
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/impl_1
+# Command line: vivado.exe -log top_level_SAR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level_SAR.tcl -notrace
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/impl_1/top_level_SAR.vdi
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_level_SAR.tcl -notrace

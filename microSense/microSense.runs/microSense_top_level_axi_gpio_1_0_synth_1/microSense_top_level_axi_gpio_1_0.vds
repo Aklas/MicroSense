@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 19:18:13 2017
+# Process ID: 340
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_axi_gpio_1_0_synth_1
+# Command line: vivado.exe -log microSense_top_level_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_axi_gpio_1_0.tcl
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_axi_gpio_1_0_synth_1/microSense_top_level_axi_gpio_1_0.vds
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_axi_gpio_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source microSense_top_level_axi_gpio_1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 355.094 ; gain = 95.563
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_axi_gpio_1_0' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_axi_gpio_1_0/synth/microSense_top_level_axi_gpio_1_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_axi_gpio_1_0' (8#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_axi_gpio_1_0/synth/microSense_top_level_axi_gpio_1_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 398.176 ; gain = 138.645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 398.176 ; gain = 138.645
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 704.215 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     9|
+|3     |LUT3 |     8|
+|4     |LUT4 |    15|
+|5     |LUT5 |    11|
+|6     |LUT6 |    16|
+|7     |FDRE |    76|
+|8     |FDSE |    12|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 704.215 ; gain = 444.684
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:34 . Memory (MB): peak = 704.215 ; gain = 456.090

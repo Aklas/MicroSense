@@ -1,0 +1,415 @@
+
+*** Running vivado
+    with args -log microSense_top_level_top_level_SAR_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_top_level_SAR_0_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source microSense_top_level_top_level_SAR_0_0.tcl -notrace
+Command: synth_design -top microSense_top_level_top_level_SAR_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2420 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 349.449 ; gain = 93.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_top_level_SAR_0_0' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_top_level_SAR_0_0/synth/microSense_top_level_top_level_SAR_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'top_level_SAR' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:4' bound to instance 'U0' of component 'top_level_SAR' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_top_level_SAR_0_0/synth/microSense_top_level_top_level_SAR_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'top_level_SAR' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:15]
+INFO: [Synth 8-3491] module 'SAR' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/SAR.vhd:7' bound to instance 'the_SAR' of component 'SAR' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'SAR' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/SAR.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'SAR' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/SAR.vhd:16]
+INFO: [Synth 8-3491] module 'Averager' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:6' bound to instance 'the_Averager' of component 'Averager' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Averager' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Averager' (2#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:14]
+INFO: [Synth 8-3491] module 'PWM_generator' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/PWM_generator.vhd:6' bound to instance 'the_PWM_generator' of component 'PWM_generator' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'PWM_generator' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/PWM_generator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PWM_generator' (3#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/PWM_generator.vhd:14]
+	Parameter period bound to: 499999 - type: integer 
+	Parameter WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter_fixed' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/downcounter_fixed.vhd:34' bound to instance 'the_fiveRC_clock' of component 'downcounter_fixed' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'downcounter_fixed' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/downcounter_fixed.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'downcounter_fixed' (4#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/downcounter_fixed.vhd:38]
+INFO: [Synth 8-3491] module 'ROM_mm' declared at 'c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/ROM_mm.vhd:5' bound to instance 'the_ROM_mm' of component 'ROM_mm' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'ROM_mm' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/ROM_mm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ROM_mm' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/ROM_mm.vhd:12]
+WARNING: [Synth 8-115] binding instance 'the_fiveRC_clock' in module 'top_level_SAR' to reference 'downcounter_fixed' which has no pins
+WARNING: [Synth 8-3848] Net zero in module/entity top_level_SAR does not have driver. [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'top_level_SAR' (6#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_top_level_SAR_0_0' (7#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_top_level_SAR_0_0/synth/microSense_top_level_top_level_SAR_0_0.vhd:67]
+WARNING: [Synth 8-3331] design PWM_generator has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 391.531 ; gain = 135.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin the_SAR:enable to constant 0 [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:65]
+WARNING: [Synth 8-3295] tying undriven pin the_Averager:enable to constant 0 [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/top_level_SAR.vhd:74]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 391.531 ; gain = 135.969
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 688.641 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element bit_counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/SAR.vhd:28]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element sample_counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:27]
+WARNING: [Synth 8-115] binding instance 'the_fiveRC_clock' in module 'top_level_SAR' to reference 'downcounter_fixed' which has no pins
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               13 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SAR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  13 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  11 Input      1 Bit        Muxes := 2     
+Module Averager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module PWM_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/ROM_mm.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element U0/the_SAR/bit_counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/SAR.vhd:28]
+WARNING: [Synth 8-6014] Unused sequential element U0/the_Averager/counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element U0/the_Averager/sample_counter_reg was removed.  [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/4a26/Averager.vhd:27]
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/total_reg[3]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/total_reg[2]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/total_reg[1]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/total_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/itotal_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/sample_counter_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/sample_counter_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/sample_counter_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/sample_counter_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/counter_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/counter_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/counter_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_12/\U0/the_Averager/counter_reg[3] )
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[4]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[5]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[6]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[7]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[8]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[9]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[10]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/the_Averager/total_reg[11]' (FDRE) to 'U0/the_Averager/total_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/the_Averager/total_reg[12] )
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/isample_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[8]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[7]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[6]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[5]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[4]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[3]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[2]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[1]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_SAR/sample_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[12]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[11]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[10]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[9]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[8]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[7]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[6]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[5]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[4]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[3]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[2]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[1]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/itotal_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/total_reg[12]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/counter_reg[3]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/counter_reg[2]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/counter_reg[1]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/counter_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/sample_counter_reg[3]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/sample_counter_reg[2]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/sample_counter_reg[1]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/the_Averager/sample_counter_reg[0]) is unused and will be removed from module microSense_top_level_top_level_SAR_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------------------------+-----------------------+---------------+----------------+
+|Module Name                            | RTL Object            | Depth x Width | Implemented As | 
++---------------------------------------+-----------------------+---------------+----------------+
+|ROM_mm                                 | STOR[0]               | 512x9         | LUT            | 
+|microSense_top_level_top_level_SAR_0_0 | U0/the_ROM_mm/STOR[0] | 512x9         | Block RAM      | 
++---------------------------------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0i_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance \U0/the_fiveRC_clock  of module downcounter_fixed having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     2|
+|2     |LUT1     |     2|
+|3     |LUT2     |     6|
+|4     |LUT3     |     4|
+|5     |LUT4     |    15|
+|6     |LUT5     |     8|
+|7     |LUT6     |    24|
+|8     |RAMB18E1 |     1|
+|9     |FDRE     |    32|
+|10    |FDSE     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------+------+
+|      |Instance              |Module        |Cells |
++------+----------------------+--------------+------+
+|1     |top                   |              |    95|
+|2     |  U0                  |top_level_SAR |    94|
+|3     |    the_PWM_generator |PWM_generator |    26|
+|4     |    the_SAR           |SAR           |    68|
++------+----------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 688.641 ; gain = 433.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 688.641 ; gain = 135.969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 688.641 ; gain = 433.078
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 688.641 ; gain = 440.844
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_top_level_SAR_0_0_synth_1/microSense_top_level_top_level_SAR_0_0.dcp' has been generated.

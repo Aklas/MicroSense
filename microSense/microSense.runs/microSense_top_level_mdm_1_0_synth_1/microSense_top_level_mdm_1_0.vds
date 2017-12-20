@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 19:20:03 2017
+# Process ID: 7952
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_mdm_1_0_synth_1
+# Command line: vivado.exe -log microSense_top_level_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_mdm_1_0.tcl
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_mdm_1_0_synth_1/microSense_top_level_mdm_1_0.vds
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_mdm_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source microSense_top_level_mdm_1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 358.156 ; gain = 93.895
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_mdm_1_0' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_mdm_1_0/synth/microSense_top_level_mdm_1_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:13769]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (1#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (2#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:6641]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:3115]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (3#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (4#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized1' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized1' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized3' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized3' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized5' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized5' (5#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (6#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:3115]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (7#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:6641]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (8#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/aa5e/hdl/mdm_v3_2_vh_rfs.vhd:13769]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_mdm_1_0' (9#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_mdm_1_0/synth/microSense_top_level_mdm_1_0.vhd:74]
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 411.324 ; gain = 147.063
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 411.324 ; gain = 147.063
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 717.293 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BSCANE2 |     1|
+|2     |BUFG    |     1|
+|3     |LUT1    |     2|
+|4     |LUT2    |    14|
+|5     |LUT3    |    28|
+|6     |LUT4    |    14|
+|7     |LUT5    |    17|
+|8     |LUT6    |    34|
+|9     |SRL16E  |     7|
+|10    |FDCE    |   100|
+|11    |FDC_1   |     1|
+|12    |FDPE    |     7|
+|13    |FDRE    |     3|
+|14    |FDRE_1  |     1|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 717.293 ; gain = 453.031
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 717.293 ; gain = 457.977

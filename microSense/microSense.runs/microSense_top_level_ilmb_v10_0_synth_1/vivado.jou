@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 19:18:13 2017
+# Process ID: 1192
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log microSense_top_level_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_ilmb_v10_0.tcl
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1/microSense_top_level_ilmb_v10_0.vds
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source microSense_top_level_ilmb_v10_0.tcl -notrace

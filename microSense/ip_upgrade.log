@@ -1,0 +1,79 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Dec  8 12:31:06 2017
+| Host         : DESKTOP-N854F8E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microSense_top_level_top_level_SAR_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of microSense_top_level_top_level_SAR_0_0 (xilinx.com:user:top_level_SAR:1.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Dec  8 10:26:17 2017
+| Host         : DESKTOP-N854F8E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microSense_top_level_vga_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of microSense_top_level_vga_module_0_0 (xilinx.com:user:vga_module:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Dec  8 09:52:50 2017
+| Host         : DESKTOP-N854F8E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microSense_top_level_top_level_SAR_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of microSense_top_level_top_level_SAR_0_0 (xilinx.com:user:top_level_SAR:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Dec  8 03:48:17 2017
+| Host         : DESKTOP-N854F8E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microSense_top_level_top_level_SAR_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of microSense_top_level_top_level_SAR_0_0 (xilinx.com:user:top_level_SAR:1.0) from (Rev. 5) to (Rev. 7)
+

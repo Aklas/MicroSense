@@ -1,0 +1,427 @@
+
+*** Running vivado
+    with args -log microSense_top_level_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_wrapper.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source microSense_top_level_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/vga'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aklas/Desktop/microSense_topLevel/sar'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 281.715 ; gain = 43.719
+Command: synth_design -top microSense_top_level_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 384.070 ; gain = 95.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_wrapper' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'microSense_top_level' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1832' bound to instance 'microSense_top_level_i' of component 'microSense_top_level' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1852]
+INFO: [Synth 8-3491] module 'microSense_top_level_axi_gpio_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'microSense_top_level_axi_gpio_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2230]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_axi_gpio_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microSense_top_level_axi_gpio_1_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'microSense_top_level_axi_gpio_1_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2253]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_axi_gpio_1_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_1_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microSense_top_level_axi_gpio_2_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'microSense_top_level_axi_gpio_2_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2276]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_axi_gpio_2_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_gpio_2_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'microSense_top_level_axi_uartlite_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'microSense_top_level_axi_uartlite_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2300]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_axi_uartlite_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'microSense_top_level_clk_wiz_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'microSense_top_level_clk_wiz_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2325]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_clk_wiz_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'microSense_top_level_mdm_1_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'microSense_top_level_mdm_1_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2332]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_mdm_1_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'microSense_top_level_microblaze_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'microSense_top_level_microblaze_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2345]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_microblaze_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_microblaze_0_axi_periph_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1191]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_YZN2YM' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_YZN2YM' (1#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_IG36BA' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_IG36BA' (2#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1WH6LQ' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1WH6LQ' (3#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_GALVHI' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_GALVHI' (4#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:360]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1JSQ530' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1023]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1JSQ530' (5#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1023]
+INFO: [Synth 8-3491] module 'microSense_top_level_xbar_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'microSense_top_level_xbar_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1733]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_xbar_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_microblaze_0_axi_periph_0' (6#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1191]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_319Z2U' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:444]
+INFO: [Synth 8-3491] module 'microSense_top_level_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'microSense_top_level_dlmb_bram_if_cntlr_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:658]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_dlmb_bram_if_cntlr_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microSense_top_level_dlmb_v10_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'microSense_top_level_dlmb_v10_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:712]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_dlmb_v10_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'microSense_top_level_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'microSense_top_level_ilmb_bram_if_cntlr_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_ilmb_bram_if_cntlr_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microSense_top_level_ilmb_v10_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'microSense_top_level_ilmb_v10_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_ilmb_v10_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'microSense_top_level_lmb_bram_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'microSense_top_level_lmb_bram_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:822]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_lmb_bram_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_319Z2U' (7#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:444]
+INFO: [Synth 8-3491] module 'microSense_top_level_rst_clk_wiz_0_100M_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'microSense_top_level_rst_clk_wiz_0_100M_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2526]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_rst_clk_wiz_0_100M_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'microSense_top_level_top_level_SAR_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_top_level_SAR_0_0_stub.vhdl:5' bound to instance 'top_level_SAR_0' of component 'microSense_top_level_top_level_SAR_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2539]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_top_level_SAR_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_top_level_SAR_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'microSense_top_level_vga_module_0_0' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_vga_module_0_0_stub.vhdl:5' bound to instance 'vga_module_0' of component 'microSense_top_level_vga_module_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:2547]
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_vga_module_0_0' [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/realtime/microSense_top_level_vga_module_0_0_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level' (8#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/synth/microSense_top_level.vhd:1852]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_wrapper' (9#1) [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd:30]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JSQ530 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JSQ530 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JSQ530 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JSQ530 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_GALVHI has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_GALVHI has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_GALVHI has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_GALVHI has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1WH6LQ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1WH6LQ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1WH6LQ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1WH6LQ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_IG36BA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_IG36BA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_IG36BA has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_IG36BA has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_YZN2YM has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_YZN2YM has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_YZN2YM has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_YZN2YM has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 428.535 ; gain = 139.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 428.535 ; gain = 139.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp33/microSense_top_level_clk_wiz_0_0_in_context.xdc] for cell 'microSense_top_level_i/clk_wiz_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp33/microSense_top_level_clk_wiz_0_0_in_context.xdc] for cell 'microSense_top_level_i/clk_wiz_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp35/microSense_top_level_axi_uartlite_0_0_in_context.xdc] for cell 'microSense_top_level_i/axi_uartlite_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp35/microSense_top_level_axi_uartlite_0_0_in_context.xdc] for cell 'microSense_top_level_i/axi_uartlite_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp37/microSense_top_level_axi_gpio_0_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp37/microSense_top_level_axi_gpio_0_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp39/microSense_top_level_axi_gpio_1_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_1'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp39/microSense_top_level_axi_gpio_1_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_1'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp41/microSense_top_level_axi_gpio_2_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_2'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp41/microSense_top_level_axi_gpio_2_0_in_context.xdc] for cell 'microSense_top_level_i/axi_gpio_2'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp43/microSense_top_level_vga_module_0_0_in_context.xdc] for cell 'microSense_top_level_i/vga_module_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp43/microSense_top_level_vga_module_0_0_in_context.xdc] for cell 'microSense_top_level_i/vga_module_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp45/microSense_top_level_microblaze_0_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp45/microSense_top_level_microblaze_0_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp47/microSense_top_level_mdm_1_0_in_context.xdc] for cell 'microSense_top_level_i/mdm_1'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp47/microSense_top_level_mdm_1_0_in_context.xdc] for cell 'microSense_top_level_i/mdm_1'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp49/microSense_top_level_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'microSense_top_level_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp49/microSense_top_level_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'microSense_top_level_i/rst_clk_wiz_0_100M'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp51/microSense_top_level_xbar_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp51/microSense_top_level_xbar_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp53/microSense_top_level_ilmb_v10_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp53/microSense_top_level_ilmb_v10_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp55/microSense_top_level_ilmb_v10_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp55/microSense_top_level_ilmb_v10_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp57/microSense_top_level_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp57/microSense_top_level_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp59/microSense_top_level_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp59/microSense_top_level_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp61/microSense_top_level_lmb_bram_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp61/microSense_top_level_lmb_bram_0_in_context.xdc] for cell 'microSense_top_level_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp63/microSense_top_level_top_level_SAR_0_0_in_context.xdc] for cell 'microSense_top_level_i/top_level_SAR_0'
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp63/microSense_top_level_top_level_SAR_0_0_in_context.xdc] for cell 'microSense_top_level_i/top_level_SAR_0'
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microSense_top_level_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microSense_top_level_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 719.973 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'microSense_top_level_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp33/microSense_top_level_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/.Xil/Vivado-2320-DESKTOP-N854F8E/dcp33/microSense_top_level_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/axi_gpio_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/top_level_SAR_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for microSense_top_level_i/vga_module_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design microSense_top_level_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microSense_top_level_i/clk_wiz_0/clk_out1' to pin 'microSense_top_level_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microSense_top_level_i/mdm_1/Dbg_Clk_0' to pin 'microSense_top_level_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microSense_top_level_i/mdm_1/Dbg_Update_0' to pin 'microSense_top_level_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microSense_top_level_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'microSense_top_level_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microSense_top_level_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'microSense_top_level_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |microSense_top_level_xbar_0               |         1|
+|2     |microSense_top_level_axi_gpio_0_0         |         1|
+|3     |microSense_top_level_axi_gpio_1_0         |         1|
+|4     |microSense_top_level_axi_gpio_2_0         |         1|
+|5     |microSense_top_level_axi_uartlite_0_0     |         1|
+|6     |microSense_top_level_clk_wiz_0_0          |         1|
+|7     |microSense_top_level_mdm_1_0              |         1|
+|8     |microSense_top_level_microblaze_0_0       |         1|
+|9     |microSense_top_level_rst_clk_wiz_0_100M_0 |         1|
+|10    |microSense_top_level_top_level_SAR_0_0    |         1|
+|11    |microSense_top_level_vga_module_0_0       |         1|
+|12    |microSense_top_level_dlmb_bram_if_cntlr_0 |         1|
+|13    |microSense_top_level_dlmb_v10_0           |         1|
+|14    |microSense_top_level_ilmb_bram_if_cntlr_0 |         1|
+|15    |microSense_top_level_ilmb_v10_0           |         1|
+|16    |microSense_top_level_lmb_bram_0           |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------------------+------+
+|      |Cell                                              |Count |
++------+--------------------------------------------------+------+
+|1     |microSense_top_level_axi_gpio_0_0_bbox_0          |     1|
+|2     |microSense_top_level_axi_gpio_1_0_bbox_1          |     1|
+|3     |microSense_top_level_axi_gpio_2_0_bbox_2          |     1|
+|4     |microSense_top_level_axi_uartlite_0_0_bbox_3      |     1|
+|5     |microSense_top_level_clk_wiz_0_0_bbox_4           |     1|
+|6     |microSense_top_level_dlmb_bram_if_cntlr_0_bbox_8  |     1|
+|7     |microSense_top_level_dlmb_v10_0_bbox_9            |     1|
+|8     |microSense_top_level_ilmb_bram_if_cntlr_0_bbox_10 |     1|
+|9     |microSense_top_level_ilmb_v10_0_bbox_11           |     1|
+|10    |microSense_top_level_lmb_bram_0_bbox_12           |     1|
+|11    |microSense_top_level_mdm_1_0_bbox_5               |     1|
+|12    |microSense_top_level_microblaze_0_0_bbox_6        |     1|
+|13    |microSense_top_level_rst_clk_wiz_0_100M_0_bbox_13 |     1|
+|14    |microSense_top_level_top_level_SAR_0_0_bbox_14    |     1|
+|15    |microSense_top_level_vga_module_0_0_bbox_15       |     1|
+|16    |microSense_top_level_xbar_0_bbox_7                |     1|
+|17    |IBUF                                              |     3|
+|18    |OBUF                                              |    16|
++------+--------------------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-----------------------------------------------+------+
+|      |Instance                      |Module                                         |Cells |
++------+------------------------------+-----------------------------------------------+------+
+|1     |top                           |                                               |  1465|
+|2     |  microSense_top_level_i      |microSense_top_level                           |  1446|
+|3     |    microblaze_0_axi_periph   |microSense_top_level_microblaze_0_axi_periph_0 |   485|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_319Z2U           |   496|
++------+------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 719.973 ; gain = 139.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 719.973 ; gain = 431.309
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 719.973 ; gain = 438.258
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/synth_1/microSense_top_level_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file microSense_top_level_wrapper_utilization_synth.rpt -pb microSense_top_level_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 719.973 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 12:33:05 2017...

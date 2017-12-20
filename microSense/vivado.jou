@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Dec  8 10:25:27 2017
+# Process ID: 4188
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1480 C:\Users\Aklas\Desktop\microSense_topLevel\microSense\microSense.xpr
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/vivado.log
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:vga_module:1.0 [get_ips  microSense_top_level_vga_module_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips microSense_top_level_vga_module_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+catch { config_ip_cache -export [get_ips -all microSense_top_level_vga_module_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+launch_runs -jobs 8 microSense_top_level_vga_module_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -directory C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files -ipstatic_source_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/modelsim} {questa=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/questa} {riviera=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/riviera} {activehdl=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+make_wrapper -files [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -top
+add_files -norecurse C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/hdl/microSense_top_level_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:\Users\Aklas\Desktop\microSense_topLevel\sar\sar.runs\impl_1\top_level_SAR.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/impl_1/top_level_SAR.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_bd_design
+file mkdir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk
+file copy -force C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/microSense_top_level_wrapper.sysdef C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk -hwspec C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.xpr
+update_compile_order -fileset sources_1
+current_project microSense
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+current_project sar
+ipx::open_ipxact_file {C:\Users\Aklas\Desktop\microSense_topLevel\sar\sar.srcs\sources_1\new\component.xml}
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new
+current_project microSense
+close_project
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new
+close_project
+open_project C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:top_level_SAR:1.0 [get_ips  microSense_top_level_top_level_SAR_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips microSense_top_level_top_level_SAR_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+catch { config_ip_cache -export [get_ips -all microSense_top_level_top_level_SAR_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd]
+launch_runs -jobs 8 microSense_top_level_top_level_SAR_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/microSense_top_level.bd] -directory C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files -ipstatic_source_dir C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/modelsim} {questa=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/questa} {riviera=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/riviera} {activehdl=C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/impl_1/microSense_top_level_wrapper.sysdef C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.sdk/microSense_top_level_wrapper.hdf
+

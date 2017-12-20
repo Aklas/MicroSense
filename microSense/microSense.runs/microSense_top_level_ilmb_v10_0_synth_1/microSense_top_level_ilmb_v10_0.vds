@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 19:18:13 2017
+# Process ID: 1192
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log microSense_top_level_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microSense_top_level_ilmb_v10_0.tcl
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1/microSense_top_level_ilmb_v10_0.vds
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.runs/microSense_top_level_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source microSense_top_level_ilmb_v10_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 350.031 ; gain = 93.137
+INFO: [Synth 8-638] synthesizing module 'microSense_top_level_ilmb_v10_0' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_ilmb_v10_0/synth/microSense_top_level_ilmb_v10_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'FDS' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (2#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ipshared/78eb/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'microSense_top_level_ilmb_v10_0' (3#1) [c:/Users/Aklas/Desktop/microSense_topLevel/microSense/microSense.srcs/sources_1/bd/microSense_top_level/ip/microSense_top_level_ilmb_v10_0/synth/microSense_top_level_ilmb_v10_0.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 392.113 ; gain = 135.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 392.113 ; gain = 135.219
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 608.785 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 608.785 ; gain = 351.891
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 608.785 ; gain = 351.891
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 608.785 ; gain = 351.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 608.785 ; gain = 351.891
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 608.785 ; gain = 351.891
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 635.277 ; gain = 378.383
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 635.277 ; gain = 378.383
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 645.414 ; gain = 388.520
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:33 . Memory (MB): peak = 658.945 ; gain = 411.141

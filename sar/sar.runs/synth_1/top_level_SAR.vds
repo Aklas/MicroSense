@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Dec  8 10:19:55 2017
+# Process ID: 2056
+# Current directory: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/synth_1
+# Command line: vivado.exe -log top_level_SAR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_SAR.tcl
+# Log file: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/synth_1/top_level_SAR.vds
+# Journal file: C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level_SAR.tcl -notrace
+Command: synth_design -top top_level_SAR -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1716 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 342.309 ; gain = 94.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level_SAR' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:17]
+INFO: [Synth 8-3491] module 'SAR' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:8' bound to instance 'the_SAR' of component 'SAR' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SAR' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SAR' (1#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:17]
+INFO: [Synth 8-3491] module 'Averager' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:6' bound to instance 'the_Averager' of component 'Averager' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Averager' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:14]
+WARNING: [Synth 8-6014] Unused sequential element i_average_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Averager' (2#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:14]
+INFO: [Synth 8-3491] module 'PWM_generator' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/PWM_generator.vhd:6' bound to instance 'the_PWM_generator' of component 'PWM_generator' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'PWM_generator' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/PWM_generator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PWM_generator' (3#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/PWM_generator.vhd:14]
+	Parameter period bound to: 99999 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter_fixed' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/downcounter_fixed.vhd:6' bound to instance 'the_RC_clock' of component 'downcounter_fixed' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'downcounter_fixed' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/downcounter_fixed.vhd:17]
+	Parameter period bound to: 99999 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter_fixed' (4#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/downcounter_fixed.vhd:17]
+INFO: [Synth 8-3491] module 'ROM_mm' declared at 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/ROM_mm.vhd:5' bound to instance 'the_ROM_mm' of component 'ROM_mm' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ROM_mm' [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/ROM_mm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ROM_mm' (5#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/ROM_mm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'top_level_SAR' (6#1) [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/top_level_SAR.vhd:17]
+WARNING: [Synth 8-3331] design PWM_generator has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 383.391 ; gain = 135.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 383.391 ; gain = 135.902
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_SAR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_SAR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 697.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element bit_counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element sample_counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/downcounter_fixed.vhd:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               13 Bit    Registers := 2     
+	                9 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	  21 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SAR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  21 Input      9 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module Averager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module PWM_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module downcounter_fixed 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element the_Averager/average_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element the_SAR/bit_counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element the_SAR/counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/SAR.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element the_Averager/counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element the_Averager/sample_counter_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/Averager.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element the_RC_clock/current_count_reg was removed.  [C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.srcs/sources_1/new/downcounter_fixed.vhd:31]
+WARNING: [Synth 8-3332] Sequential element (the_Averager/total_reg[3]) is unused and will be removed from module top_level_SAR.
+WARNING: [Synth 8-3332] Sequential element (the_Averager/total_reg[2]) is unused and will be removed from module top_level_SAR.
+WARNING: [Synth 8-3332] Sequential element (the_Averager/total_reg[1]) is unused and will be removed from module top_level_SAR.
+WARNING: [Synth 8-3332] Sequential element (the_Averager/total_reg[0]) is unused and will be removed from module top_level_SAR.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+--------------------------+---------------+----------------+
+|Module Name   | RTL Object               | Depth x Width | Implemented As | 
++--------------+--------------------------+---------------+----------------+
+|ROM_mm        | STOR[0]                  | 512x9         | LUT            | 
+|top_level_SAR | the_Averager/average_reg | 512x9         | Block RAM      | 
++--------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance the_Averager/average_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    11|
+|3     |LUT1     |    15|
+|4     |LUT2     |    31|
+|5     |LUT3     |     8|
+|6     |LUT4     |    40|
+|7     |LUT5     |    14|
+|8     |LUT6     |    44|
+|9     |RAMB18E1 |     1|
+|10    |FDCE     |     8|
+|11    |FDPE     |    10|
+|12    |FDRE     |    86|
+|13    |FDSE     |     1|
+|14    |IBUF     |     3|
+|15    |OBUF     |    10|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |   283|
+|2     |  the_Averager      |Averager          |    82|
+|3     |  the_PWM_generator |PWM_generator     |    26|
+|4     |  the_RC_clock      |downcounter_fixed |    58|
+|5     |  the_SAR           |SAR               |   103|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 697.469 ; gain = 135.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 697.469 ; gain = 449.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 697.469 ; gain = 460.227
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aklas/Desktop/microSense_topLevel/sar/sar.runs/synth_1/top_level_SAR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_SAR_utilization_synth.rpt -pb top_level_SAR_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 697.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 10:20:36 2017...
