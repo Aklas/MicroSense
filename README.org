@@ -1,0 +1,17 @@
+#+title: MicroSense
+
+* [[./Documentation.pdf][Documentation]]
+* Description
+A system on chip (SoC) to execute a C++ version of the Dinosaur
+game. It was developed and tested using a Basys 3 (Artix-7) FPGA.
+
+The SoC has multiple modules, including:
+- Video Display Controller (VDC)
+- Framebuffer
+- Softcore CPU (MicroBlaze)
+- Successive-Approximation Analog to Digital Converter (ADC)
+- Signal Generator
+- Additional IP Cores
+
+#+CAPTION: Basys 3 (Artix-7) FPGA Development Board
+[[./basys-3.png]]
